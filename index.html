@@ -1,23 +1,50 @@
 <!DOCTYPE html>
-<html>	
-	<meta charset="utf-8">
+<html lang="en">		
 	<head>
 		<title>Proyect 2</title>
 		<link rel="stylesheet" href="design.css">
 
 	</head>
 	<body>
-		<h1 id="title" class="center"> Solenya-Catering survey form</h1>
-		<p id="description" class="center">Thank you for taking the time to help us improve our service</p>
-		<form action="" id="survey-form" class="center">
-			<label for="name">Name</label>
+		<h1 id="title"> The best "The Strokes" song survey form</h1>
+		<p id="description">Thank you for taking the time to help us discover what's the best song</p>
+		<form action="" id="survey-form" class="form-style-7">
+			<label for="name" id="name-label">Name</label><br>
+  			<input type="text" class="info-input" id="name" name="name" placeholder="Enter your name" required><br>
+  			<label for="email" id="email-label">Email</label><br>
+  			<input type="email" class="info-input" id="email"  name ="email" placeholder="Enter your email"required><br>
+  			<label for="number" id= "number-label">Number (optional) </label><br>
+  			<input type="number" class="info-input" id="number" min="0" max="100" name="number"placeholder="Enter a number" required><br>
 			<br>
-  			<input type="text" id="name" name="name">
-  			<br>
-  			<br>
-  			<label for="email"> Email </label>
-  			<br>
-  			<input type="text" id="email"  name ="email">
+				<label for="radio"> Please select your gender </label>
+			<div id="radio-button-area">
+				<input type="radio" class="radio-inline" id="male" name="gender" value="male">  Male <br>	
+				<input type="radio" class="radio-inline" id="female" name="gender" value="female">  Female <br>
+				<input type="radio" class="radio-inline" id="other" name="gender" value="other">Other
+			</div>
+			<br>
+
+			<label for="dropdown"> Wich song is in your opinion the best?</label><br>
+			<select id="dropdown" name="songs" class="field-select">
+				<option value=""> Select an option </option>
+			  	<option value="automatic-stop">Automatic Stop</option>
+			  	<option value="welcome-to-japan">Welcome to japan</option>
+			  	<option value="reptilia">Reptilia</option>
+			  	<option value="Take-it-or-leave-it">Take it or leave it</option>
+			</select>
+			<br>
+
+			<label for="radio">What transport did you use ?	 </label>
+			<div id="radio-button-area">
+				<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> I have a bike <br>		
+  				<input type="checkbox" id="vehicle2" name="vehicle2" value="Car"> I have a Car<br>		
+  				<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"> I have a Boat<br>
+			</div>
+			<br>
+			<label for="textarea"> Any particular band related to "The strokes" style that you might suggest ?</label>
+			<textarea placeholder="Additional Comments" class="input-textarea"></textarea>
+			<br>
+			<input type="submit" id="submit">
 		</form>
 		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	</body>
